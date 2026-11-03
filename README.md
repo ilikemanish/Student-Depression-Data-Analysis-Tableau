@@ -1,120 +1,147 @@
 
-# 📊 Student Depression Analysis Using SQL Server & Tableau
+<div align="center">
 
-![Project](https://img.shields.io/badge/Project-Data%20Analytics-blue)
-![SQL](https://img.shields.io/badge/Database-Microsoft%20SQL%20Server-red)
-![Visualization](https://img.shields.io/badge/Visualization-Tableau-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+# 📊 STUDENT DEPRESSION ANALYSIS
 
-## 📌 Project Overview
+### Exploring Student Mental Health Through Data Analytics
 
-The **Student Depression Analysis** project focuses on exploring student-related data to understand the relationship between academic pressure, financial stress, sleep duration, study habits, dietary habits, and depression labels.
+**Microsoft SQL Server • SQL • Tableau**
 
-This project uses **Microsoft SQL Server** for data storage, cleaning, transformation, and querying, while **Tableau** is used to create interactive dashboards and visualizations.
+<br/>
 
-The main objective is to transform raw student data into meaningful insights that help understand patterns related to student well-being.
+<img src="https://img.shields.io/badge/SQL-Microsoft%20SQL%20Server-red?style=for-the-badge&logo=microsoftsqlserver&logoColor=white"/>
+<img src="https://img.shields.io/badge/Visualization-Tableau-orange?style=for-the-badge&logo=tableau&logoColor=white"/>
+<img src="https://img.shields.io/badge/Analysis-Data%20Analytics-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+
+<br/><br/>
+
+**Turning Raw Student Data Into Meaningful Insights.**
+
+</div>
+
+---
+
+## 🌟 About The Project
+
+The **Student Depression Analysis** project is a data analytics project designed to explore student-related factors associated with depression labels.
+
+Using **Microsoft SQL Server** for data cleaning, transformation, and querying, combined with **Tableau** for interactive data visualization, this project transforms raw student data into meaningful analytical insights.
+
+The project explores how academic pressure, financial stress, study satisfaction, sleep duration, study hours, and lifestyle factors vary across student records.
+
+The ultimate goal is to demonstrate how data analytics tools can help uncover patterns in student well-being data.
 
 ---
 
 ## 🎯 Project Objectives
 
-- Analyze student depression-related data.
-- Perform data cleaning and transformation using SQL Server.
-- Understand the impact of academic pressure on student well-being.
-- Analyze financial stress and study satisfaction.
-- Explore sleep duration and study-hour patterns.
-- Examine relationships between lifestyle factors and depression labels.
-- Create an interactive Tableau dashboard.
-- Present meaningful insights through data visualization.
+- 📌 Analyze student depression-related records.
+- 🧹 Clean and transform raw data using SQL.
+- 📊 Explore academic pressure and study satisfaction.
+- 💰 Analyze financial stress patterns.
+- 😴 Explore student sleep-duration patterns.
+- 📚 Analyze study hours and lifestyle factors.
+- 📈 Build an interactive Tableau dashboard.
+- 💡 Generate meaningful insights through data visualization.
 
 ---
 
-## 🛠️ Tools & Technologies Used
+## 🛠️ Tech Stack
 
-| Tool | Purpose |
-|---|---|
-| Microsoft SQL Server | Data storage, cleaning, and analysis |
-| SQL | Data querying and transformation |
-| Tableau | Dashboard creation and visualization |
-| CSV | Dataset storage |
-| GitHub | Project documentation and version control |
+<div align="center">
+
+| Technology | Purpose |
+|:---:|---|
+| 🗄️ Microsoft SQL Server | Database Management |
+| 💻 SQL | Data Cleaning & Analysis |
+| 📊 Tableau | Data Visualization |
+| 📁 CSV | Dataset Storage |
+| 🐙 GitHub | Project Documentation |
+
+</div>
 
 ---
 
-## 📂 Dataset Information
+## 📂 Dataset Overview
 
 **Dataset Name:** Depression Student Dataset
 
-The dataset contains **502 records and 11 columns**.
+| Dataset Information | Details |
+|---|---:|
+| Total Records | 502 |
+| Total Columns | 11 |
+| Data Format | CSV |
+| Analysis Type | Exploratory Data Analysis |
 
-### Dataset Columns
+### 📋 Dataset Attributes
 
-| Column Name | Description |
+| Column | Description |
 |---|---|
-| Gender | Gender of the student |
-| Age | Age of the student |
+| Gender | Student gender |
+| Age | Student age |
 | Academic Pressure | Academic pressure rating |
 | Study Satisfaction | Study satisfaction rating |
-| Sleep Duration | Student's sleep duration |
-| Dietary Habits | Dietary habits of students |
-| Have you ever had suicidal thoughts? | Self-reported response |
-| Study Hours | Daily study hours |
+| Sleep Duration | Daily sleep duration category |
+| Dietary Habits | Student dietary habits |
+| Suicidal Thoughts | Self-reported response |
+| Study Hours | Study hours |
 | Financial Stress | Financial stress rating |
-| Family History of Mental Illness | Family mental health history |
-| Depression | Depression label (Yes/No) |
+| Family History | Family history of mental illness |
+| Depression | Depression label |
 
 ---
 
-## 🗄️ SQL Server Analysis
+## 🗄️ SQL Server – Data Cleaning & Analysis
 
-Microsoft SQL Server was used to prepare and analyze the dataset.
+Microsoft SQL Server was used to prepare the dataset and perform structured analysis.
 
-### SQL Operations Performed
+### 🔹 SQL Operations
 
-**1. Database Creation**
-- Created a dedicated database.
+**01. Database Creation**
+- Created a dedicated project database.
 - Imported the student dataset.
-- Checked the imported records.
+- Inspected the imported table.
 
-**2. Data Cleaning**
+**02. Data Cleaning**
 - Standardized gender values.
 - Checked NULL and blank values.
-- Converted depression labels into readable Yes/No values.
+- Converted depression labels into readable formats.
 - Added an identity column.
 
-**3. Data Transformation**
+**03. Data Transformation**
 - Created age groups using CASE statements.
-- Categorized students into different age ranges.
-- Converted data into analysis-friendly formats.
+- Categorized students into age ranges.
+- Prepared data for analytical queries.
 
-**4. Data Analysis**
-- Counted students by gender.
-- Analyzed age-group distribution.
-- Analyzed academic pressure.
-- Examined study satisfaction.
-- Analyzed sleep duration.
-- Explored study hours.
-- Examined financial stress.
-- Compared depression labels.
-- Analyzed family history responses.
+**04. Exploratory Data Analysis**
+- Gender distribution analysis.
+- Age-group analysis.
+- Academic pressure analysis.
+- Study satisfaction analysis.
+- Sleep duration analysis.
+- Study hours analysis.
+- Financial stress analysis.
+- Family history analysis.
+- Depression label distribution.
 
-### SQL Files
+### 📑 SQL File Documentation
 
-| File | Description |
+| SQL File | Description |
 |---|---|
-| SQLQuery1.sql | Database creation and data inspection |
-| SQLQuery2.sql | Gender analysis and data cleaning |
-| SQLQuery3.sql | Age grouping and age analysis |
-| SQLQuery4.sql | Exploratory analysis of student factors |
-| SQLQuery5.sql | Identity column and depression label transformation |
+| `SQLQuery1.sql` | Database creation and data inspection |
+| `SQLQuery2.sql` | Gender analysis and cleaning |
+| `SQLQuery3.sql` | Age grouping and analysis |
+| `SQLQuery4.sql` | Exploratory data analysis |
+| `SQLQuery5.sql` | Index creation and depression label transformation |
 
 ---
 
 ## 📊 Tableau Dashboard
 
-Tableau was used to create a dashboard containing five worksheets.
+Tableau was used to create an analytical dashboard containing five worksheets.
 
-### Dashboard Components
+### 📈 Dashboard Analysis
 
 | Worksheet | Analysis |
 |---|---|
@@ -124,99 +151,92 @@ Tableau was used to create a dashboard containing five worksheets.
 | SH & SC | Study Hours vs Student Count |
 | SS & SC | Study Satisfaction vs Student Count |
 
-### Dashboard Features
+### ✨ Dashboard Features
 
-- Student count analysis.
-- Academic pressure distribution.
-- Financial stress distribution.
-- Sleep duration analysis.
-- Study hours analysis.
-- Study satisfaction distribution.
-- Combined dashboard for easy comparison.
-- Phone layout for mobile viewing.
+- 📊 Interactive data visualization.
+- 📌 Student count distribution.
+- 📚 Academic pressure analysis.
+- 💰 Financial stress analysis.
+- 😴 Sleep duration analysis.
+- ⏰ Study hours distribution.
+- 😊 Study satisfaction analysis.
+- 📱 Mobile-friendly dashboard layout.
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## 🔍 Key Analytical Findings
 
-The dataset was analyzed to identify patterns and relationships between student characteristics and depression labels.
+The following findings are based on exploratory analysis of the supplied dataset.
 
-### 1. Depression Distribution
+### 1️⃣ Depression Distribution
 
-- Total Records: 502
-- Depression = Yes: 254
-- Depression = No: 248
+The dataset contains 502 student records, with two depression-label categories.
 
-### 2. Academic Pressure Analysis
+| Category | Records |
+|---|---:|
+| Depression – Yes | 254 |
+| Depression – No | 248 |
+| **Total** | **502** |
+
+### 2️⃣ Academic Pressure
 
 Higher academic-pressure ratings are associated with a higher proportion of records labelled Depression = Yes.
 
-### 3. Financial Stress Analysis
+### 3️⃣ Financial Stress
 
-The proportion of Depression = Yes increases across higher financial-stress ratings in the dataset.
+The proportion of records labelled Depression = Yes increases across higher financial-stress ratings.
 
-### 4. Study Satisfaction Analysis
+### 4️⃣ Study Satisfaction
 
 Higher study-satisfaction ratings are associated with a lower proportion of records labelled Depression = Yes.
 
-### 5. Sleep Duration Analysis
+### 5️⃣ Sleep Duration
 
-Sleep-duration categories were compared to explore differences in depression-label distribution.
+Different sleep-duration categories were compared to explore variations in depression-label distribution.
 
-### 6. Dietary Habits Analysis
+### 6️⃣ Dietary Habits
 
-Healthy, moderate, and unhealthy dietary categories were compared to identify differences in depression-label proportions.
+Healthy, moderate, and unhealthy dietary categories were explored to identify differences across the dataset.
 
-### 7. Study Hours Analysis
+### 7️⃣ Study Hours
 
-Study hours were examined to understand how study patterns differ between the two depression-label groups.
-
----
-
-## 📈 Key Insights
-
-- Academic pressure shows a positive association with depression labels.
-- Higher financial stress is associated with a higher depression-label proportion.
-- Higher study satisfaction is associated with a lower depression-label proportion.
-- Study hours differ between the two depression-label groups.
-- Dietary habits and sleep duration show variations across groups.
-- Family history responses can be explored as an additional analytical dimension.
-
-**Note:** These are descriptive associations from the supplied dataset. They do not establish causation or provide a clinical diagnosis.
+Study-hour patterns were compared between the two depression-label groups.
 
 ---
 
-## 💡 Business / Analytical Recommendations
+## 💡 Insights & Recommendations
 
-Based on the exploratory findings:
+Based on the exploratory analysis:
 
-1. Educational institutions can monitor academic workload and student satisfaction.
-2. Student support initiatives can consider financial stress as one of several relevant factors.
-3. Awareness programs can encourage healthy study routines and sleep habits.
-4. Institutions can use appropriately protected, aggregated survey data to understand student well-being.
-5. Future analysis can include additional variables and larger datasets.
+- Academic pressure is an important variable to examine in student well-being research.
+- Financial stress shows a positive association with depression labels.
+- Study satisfaction shows a negative association with depression labels.
+- Sleep duration and dietary habits provide additional lifestyle dimensions for analysis.
+- Educational institutions can use aggregated survey insights to improve student-support initiatives.
+
+> ⚠️ These results represent statistical associations in the supplied dataset. They do not establish causation or provide a clinical diagnosis.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-Student-Depression-Analysis-SQL-Server-Tableau/
+Student-Depression-Analysis/
 │
-├── Dataset/
+├── 📂 Dataset/
 │   └── Depression+Student+Dataset.csv
 │
-├── SQL/
+├── 📂 SQL/
 │   ├── SQLQuery1.sql
 │   ├── SQLQuery2.sql
 │   ├── SQLQuery3.sql
 │   ├── SQLQuery4.sql
 │   └── SQLQuery5.sql
 │
-├── Tableau/
+├── 📂 Tableau/
 │   └── DASHBOARD.twb
 │
-├── Report/
+├── 📂 Report/
 │   └── Student_Depression_Analysis_Report.pdf
 │
 └── README.md
@@ -224,68 +244,92 @@ Student-Depression-Analysis-SQL-Server-Tableau/
 
 ---
 
-## ⚙️ How to Run This Project
+## ⚙️ How To Run This Project
 
-### Step 1: Download the Repository
+### Step 1 – Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Student-Depression-Analysis-SQL-Server-Tableau.git
+git clone https://github.com/your-username/Student-Depression-Analysis.git
 ```
 
-### Step 2: Open SQL Server
+### Step 2 – Open SQL Server
 
-- Open SQL Server Management Studio (SSMS).
-- Create or select the project database.
-- Import the CSV dataset.
-- Execute the SQL scripts in the correct order.
+1. Open SQL Server Management Studio (SSMS).
+2. Create the project database.
+3. Import the CSV dataset.
+4. Execute the SQL scripts in the correct order.
+5. Verify the cleaned data.
 
-### Step 3: Open Tableau
+### Step 3 – Open Tableau
 
-- Open Tableau Desktop.
-- Connect to Microsoft SQL Server or the prepared dataset.
-- Load the required tables.
-- Open the provided `DASHBOARD.twb` workbook.
-- Update the data connection if required.
+1. Open Tableau Desktop.
+2. Connect to Microsoft SQL Server.
+3. Select the prepared database table.
+4. Open `DASHBOARD.twb`.
+5. Update the data connection if required.
 
-### Step 4: Explore the Dashboard
+### Step 4 – Explore Dashboard
 
-Explore the five worksheets and analyze student-count distributions across different academic and lifestyle factors.
-
----
-
-## 🚀 Future Scope
-
-- Add more student records for deeper analysis.
-- Create additional Tableau visualizations.
-- Include outcome-based comparison charts.
-- Perform correlation analysis.
-- Develop predictive models using machine learning.
-- Improve dashboard interactivity with filters and parameters.
-- Include more academic and lifestyle variables.
+Explore all five worksheets and compare student-count distributions across the selected factors.
 
 ---
 
-## ⚠️ Limitations
+## 🚀 Future Improvements
 
-- The analysis is based on 502 supplied records.
-- The dataset's sampling method is not documented.
-- The findings are descriptive and cannot establish cause and effect.
-- Depression labels should not be treated as clinical diagnoses.
-- The analysis may not represent all student populations.
+- Advanced statistical analysis.
+- Correlation analysis between variables.
+- Additional Tableau charts and filters.
+- Depression-label comparison across all major factors.
+- Larger and more representative datasets.
+- Predictive analytics for research purposes.
+- Improved data-quality validation.
+
+---
+
+## ⚠️ Project Limitations
+
+- The analysis uses 502 supplied records.
+- The dataset's sampling methodology is not documented.
+- Findings are descriptive, not causal.
+- Depression labels are not clinical diagnoses.
+- Results should not be generalized to all students.
 
 ---
 
 ## 👨‍💻 Author
 
-**Agam Singh**
+<div align="center">
 
-📌 Data Analytics Project  
-🛠️ Microsoft SQL Server | Tableau | SQL
+### **Manish Kashyap**
+
+**Data Analytics | SQL | Tableau**
+
+Passionate about transforming raw data into meaningful insights through data analytics and visualization.
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-Visit%20Profile-181717?style=for-the-badge&logo=github)](https://github.com/your-username)
+
+</div>
 
 ---
 
-## ⭐ Support
+## ⭐ Support This Project
 
-If you find this project useful, consider giving this repository a ⭐ on GitHub.
+If you find this project useful or interesting:
 
-**Thank you for visiting!**
+- ⭐ Star this repository.
+- 🍴 Fork the repository.
+- 📢 Share it with other data enthusiasts.
+
+---
+
+<div align="center">
+
+### 💙 THANK YOU FOR VISITING!
+
+**Turning Data Into Decisions.**
+
+*Made with ❤️ by Manish Kashyap*
+
+</div>
